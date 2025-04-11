@@ -1,3 +1,4 @@
+import { ReactScan } from "@/components/ReactScan";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from 'sonner';
@@ -25,11 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ReactScan/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <Toaster/>
+        <Toaster richColors className="text-black" duration={6000}/>
       </body>
     </html>
   );
