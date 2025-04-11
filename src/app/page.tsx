@@ -16,10 +16,10 @@ export default function Home() {
         />
         <ul className="text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
-            This is a public route
+            This is a public route To
             <Button variant={'link'}>
               <code>
-                To <Link href={'/dashboard'}>/dashboard</Link>
+               <Link href={'/dashboard'}>/dashboard</Link>
               </code>
             </Button>
           </li>

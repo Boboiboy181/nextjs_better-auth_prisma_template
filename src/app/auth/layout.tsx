@@ -11,16 +11,18 @@ export default function AuthLayout({
   const router = useRouter();
 
   return (
-    <div className="!font-[family-name:var(--font-geist-sans)] flex items-start justify-items-center min-h-screen flex-col gap-4">
-      <Button
-        variant={"link"}
-        onClick={() => {
-          router.back();
-        }}
-      >
-        Back
-      </Button>
-      {children}
+    <div className="!font-[family-name:var(--font-geist-sans)] flex items-center justify-center min-h-screen">
+      <div className="flex flex-col gap-4 items-start">
+        <Button
+          variant={"link"}
+          onClick={() => {
+            router.back();
+          }}
+        >
+          Back
+        </Button>
+        {children}
+      </div>
     </div>
   );
 }
