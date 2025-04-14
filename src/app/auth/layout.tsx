@@ -11,7 +11,7 @@ export default function AuthLayout({
   const router = useRouter();
 
   return (
-    <div className="!font-[family-name:var(--font-geist-sans)] flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="flex flex-col gap-4 items-start">
         <Button
           variant={"link"}
