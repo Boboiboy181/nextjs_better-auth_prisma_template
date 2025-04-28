@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ReactScan />
-      <body className={"antialiased"}>
+      <body className={"antialiased bg-slate-50"}>
         {children}
         <Toaster richColors className="text-black" duration={6000} />
       </body>
