@@ -40,9 +40,7 @@ cd nextjs_better-auth_prisma_animejs_template
 ### 2. Install dependencies
 
 ```bash
-npm install
-# or
-yarn install
+pnpm install
 ```
 
 ### 3. Configure environment variables
@@ -52,13 +50,13 @@ Create a `.env` file based on `.env.example` and set your database credentials a
 ### 4. Set up the database
 
 ```bash
-npx prisma migrate dev --name init
+pnpx prisma migrate dev --name init
 ```
 
 ### 5. Run the development server
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Visit `http://localhost:3000` in your browser.
